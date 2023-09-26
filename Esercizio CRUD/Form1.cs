@@ -45,5 +45,24 @@ namespace Esercizio_CRUD
             p[dim].prezzo = double.Parse(Prezzo.Text);
             dim++;
         }
+
+        private void Visualizza(object sender, EventArgs e)
+        {
+            Listaprod.Items.Clear();
+            for (int i = 0;i<dim;i++)
+            {
+                Listaprod.Items.Add("Oggetto: " + p[i].nome+" Prezzo: " + p[i].prezzo);
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
